@@ -12,8 +12,12 @@ object FontUtils {
     val defaultFont = Style.EMPTY.withFont(FontDescription.Resource(Identifier.fromNamespaceAndPath("minecraft", "default")))
 
     enum class Icons(val component: MutableComponent) {
-        PING(Component.literal("\uE000").withStyle(iconFont)),
-        LOCATION(Component.literal("\uE001").withStyle(iconFont)),
-        FPS(Component.literal("\uE002").withStyle(iconFont))
+        PING("\uE000"),
+        LOCATION("\uE001"),
+        FPS("\uE002"),
+        BIOME("\uE003"),
+        ;
+
+        constructor(c: String) :  this(Component.literal(c).withStyle(iconFont))
     }
 }
