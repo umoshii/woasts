@@ -18,11 +18,12 @@ object ColorUtils {
         return (aa shl 24) or (rr shl 16) or (gg shl 8) or bb
     }
 
-    enum class CatppuccinColors(val hex: Int) {
+    enum class Catppuccin(val hex: Int) {
         RED(hexToArgb("#e78284ff")),
         PEACH(hexToArgb("#ef9f76ff")),
         YELLOW(hexToArgb("#e5c890ff")),
         GREEN(hexToArgb("#a6d189ff")),
+        LATTE_GREEN(hexToArgb("#40a02bff")),
         SKY(hexToArgb("#99d1dbff")),
         SAPPHIRE(hexToArgb("#85c1dcff")),
         LAVENDER(hexToArgb("#babbf1ff")),

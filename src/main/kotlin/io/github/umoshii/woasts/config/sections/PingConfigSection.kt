@@ -24,17 +24,17 @@ class PingConfigSection : WidgetConfigSection {
     var orangePingRange: Long = 100L
 
     @ConfigEntry.ColorPicker(allowAlpha = true)
-    var grayPingColor: Int = ColorUtils.CatppuccinColors.OVERLAY.hex
+    var grayPingColor: Int = ColorUtils.Catppuccin.OVERLAY.hex
 
     @ConfigEntry.ColorPicker(allowAlpha = true)
-    var greenPingColor: Int = ColorUtils.CatppuccinColors.GREEN.hex
+    var greenPingColor: Int = ColorUtils.Catppuccin.GREEN.hex
 
     @ConfigEntry.ColorPicker(allowAlpha = true)
-    var yellowPingColor: Int = ColorUtils.CatppuccinColors.YELLOW.hex
+    var yellowPingColor: Int = ColorUtils.Catppuccin.YELLOW.hex
 
     @ConfigEntry.ColorPicker(allowAlpha = true)
-    var orangePingColor: Int = ColorUtils.CatppuccinColors.PEACH.hex
+    var orangePingColor: Int = ColorUtils.Catppuccin.PEACH.hex
 
     @ConfigEntry.ColorPicker(allowAlpha = true)
-    var redPingColor: Int = ColorUtils.CatppuccinColors.RED.hex
+    var redPingColor: Int = ColorUtils.Catppuccin.RED.hex
 }
