@@ -39,8 +39,8 @@ object WidgetRenderer {
                 var x = WoastsClient.config.margin
                 var y = WoastsClient.config.margin
 
-                lines.forEach { line ->
-                    line.forEach { widget ->
+                for (line in lines) {
+                    for (widget in line) {
                         widget.render(graphics, tickCounter, x, y)
                         x += widget.containerWidth + WoastsClient.config.spacing
                     }
@@ -54,8 +54,8 @@ object WidgetRenderer {
                 var x = McClient.window.guiScaledWidth - WoastsClient.config.margin
                 var y = WoastsClient.config.margin
 
-                lines.forEach { line ->
-                    line.forEachIndexed { index, widget ->
+                for (line in lines) {
+                    for ((index, widget) in line.withIndex()) {
                         x -= if(index == 0) {
                             widget.containerWidth
                         } else {
@@ -74,8 +74,8 @@ object WidgetRenderer {
                 var x = WoastsClient.config.margin
                 var y = McClient.window.guiScaledHeight - CONTAINER_HEIGHT - WoastsClient.config.margin
 
-                lines.forEach { line ->
-                    line.forEach { widget ->
+                for (line in lines) {
+                    for (widget in line) {
                         widget.render(graphics, tickCounter, x, y)
                         x += widget.containerWidth + WoastsClient.config.spacing
                     }
@@ -89,8 +89,8 @@ object WidgetRenderer {
                 var x = McClient.window.guiScaledWidth - WoastsClient.config.margin
                 var y = McClient.window.guiScaledHeight - CONTAINER_HEIGHT - WoastsClient.config.margin
 
-                lines.forEach { line ->
-                    line.forEachIndexed { index, widget ->
+                for (line in lines) {
+                    for ((index, widget) in line.withIndex()) {
                         x -= if(index == 0) {
                             widget.containerWidth
                         } else {
