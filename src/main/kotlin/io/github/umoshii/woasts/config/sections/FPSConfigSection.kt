@@ -12,8 +12,8 @@ class FPSConfigSection : WidgetConfigSection {
     var optimalFps: Int = 60
 
     @ConfigEntry.ColorPicker(allowAlpha = true)
-    var greenFpsColor: Int = ColorUtils.CatppuccinColors.GREEN.hex
+    var greenFpsColor: Int = ColorUtils.Catppuccin.GREEN.hex
 
     @ConfigEntry.ColorPicker(allowAlpha = true)
-    var yellowFpsColor: Int = ColorUtils.CatppuccinColors.YELLOW.hex
+    var yellowFpsColor: Int = ColorUtils.Catppuccin.YELLOW.hex
 }

@@ -1,0 +1,2 @@
+classTweaker v2 official
+accessible method net/minecraft/world/level/biome/Biome getBaseGrassColor ()I
