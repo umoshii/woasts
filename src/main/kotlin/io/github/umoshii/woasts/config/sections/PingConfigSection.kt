@@ -3,7 +3,7 @@ package io.github.umoshii.woasts.config.sections
 import io.github.umoshii.woasts.utils.ColorUtils
 import me.shedaniel.autoconfig.annotation.ConfigEntry
 
-class PingConfigSection : WidgetConfigSection() {
+class PingConfigSection : WidgetConfigSection {
     override var isEnabled: Boolean = true
 
     override var showBackground: Boolean = true

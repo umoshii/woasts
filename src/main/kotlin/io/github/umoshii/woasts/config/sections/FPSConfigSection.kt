@@ -3,7 +3,7 @@ package io.github.umoshii.woasts.config.sections
 import io.github.umoshii.woasts.utils.ColorUtils
 import me.shedaniel.autoconfig.annotation.ConfigEntry
 
-class FPSConfigSection : WidgetConfigSection() {
+class FPSConfigSection : WidgetConfigSection {
     override var isEnabled: Boolean = true
 
     override var showBackground: Boolean = true
