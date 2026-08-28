@@ -88,6 +88,7 @@ loom {
         runDir = "../../run"
         vmArg("-Dfabric.modsFolder=\"${mcVersion}Mods\"")
     }
+    accessWidenerPath = rootProject.file("src/main/resources/woasts.classtweaker")
 }
 
 tasks.withType<JavaCompile>().configureEach {
@@ -101,10 +102,10 @@ kotlin {
 }
 
 java {
-	withSourcesJar()
+    withSourcesJar()
 
-	sourceCompatibility = JavaVersion.VERSION_25
-	targetCompatibility = JavaVersion.VERSION_25
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
 }
 
 tasks.jar {

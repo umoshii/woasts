@@ -44,6 +44,7 @@
 	"mixins": [
         "woasts.mixins.json"
 	],
+    "accessWidener": "woasts.classtweaker",
 
 	"depends": {
 		"minecraft": "${mod_mc_compat}",
