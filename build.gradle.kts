@@ -81,6 +81,15 @@ tasks.processResources {
 	dependsOn("flattenLang")
 }
 
+val mcVersion = sc.current.version.replace(".", "")
+loom {
+    runConfigs["client"].apply {
+        ideConfigGenerated(true)
+        runDir = "../../run"
+        vmArg("-Dfabric.modsFolder=\"${mcVersion}Mods\"")
+    }
+}
+
 tasks.withType<JavaCompile>().configureEach {
 	options.release = 25
 }

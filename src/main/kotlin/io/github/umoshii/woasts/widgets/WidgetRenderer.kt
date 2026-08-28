@@ -13,7 +13,7 @@ import net.minecraft.client.DeltaTracker
 import net.minecraft.client.gui.GuiGraphicsExtractor
 
 object WidgetRenderer {
-    private val widgets: List<Widget> = listOf(PingWidget, FPSWidget, PositionWidget)
+    private val widgets: List<Widget<*>> = listOf(PingWidget, FPSWidget, PositionWidget)
 
     // this is a static value, so it's justifiable to put it here like this
     private const val CONTAINER_HEIGHT: Int = 14
