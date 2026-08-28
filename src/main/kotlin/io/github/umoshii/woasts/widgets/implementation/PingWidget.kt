@@ -1,18 +1,19 @@
 package io.github.umoshii.woasts.widgets.implementation
 
 import io.github.umoshii.woasts.WoastsClient
+import io.github.umoshii.woasts.config.sections.PingConfigSection
 import io.github.umoshii.woasts.features.PingListener
 import io.github.umoshii.woasts.utils.FontUtils
 import io.github.umoshii.woasts.widgets.Widget
 import net.minecraft.network.chat.MutableComponent
 
-object PingWidget : Widget() {
+object PingWidget : Widget<PingConfigSection>() {
     private const val SECOND: Int = 1000
     private var lastPingTime: Long = 0L
     private var lastPingValue: Long = 0L
 
-    override val isEnabled: Boolean
-        get() = WoastsClient.config.pingConfig.isEnabled
+    override val config: PingConfigSection
+        get() = WoastsClient.config.pingConfig
 
     override fun getRenderIcon(): MutableComponent = FontUtils.Icons.PING.component
 

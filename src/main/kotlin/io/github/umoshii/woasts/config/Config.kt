@@ -39,6 +39,9 @@ class Config : ConfigData {
     @ConfigEntry.Gui.Tooltip
     var wrapSpacing: Int = 3
 
+    @ConfigEntry.Gui.Tooltip
+    var hideBackgroundOverride: Boolean = false
+
     @ConfigEntry.Gui.CollapsibleObject
     var pingConfig: PingConfigSection = PingConfigSection()
 

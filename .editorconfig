@@ -1,0 +1,21 @@
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+indent_size = 4
+indent_style = space
+
+ij_any_block_comment_add_space = true
+ij_any_line_comment_add_space = true
+
+max_line_length = 160
+
+[{*.xml,*.json*}]
+max_line_length = 2000
+
+[*.kt]
+ij_kotlin_enum_constants_wrap = split_into_lines
+ij_kotlin_allow_trailing_comma_on_call_site = true
+ij_kotlin_allow_trailing_comma = true

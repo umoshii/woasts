@@ -43,9 +43,15 @@
                         "@Tooltip": "Specifies the amount of spacing between each wrapped line."
                     },
 
+                    "hideBackgroundOverride": {
+                        "@": "Hide Background Override",
+                        "@Tooltip": "If enabled, hides the background on all widgets."
+                    },
+
                     "pingConfig": {
                         "@": "Ping Widget",
                         "isEnabled": "Enabled",
+                        "showBackground": "Show Background",
 
                         "updateTime": {
                             "@": "Update Time",
@@ -94,12 +100,14 @@
                     "positionConfig": {
                         "@": "Position Widget",
                         "isEnabled": "Enabled",
+                        "showBackground": "Show Background",
                         "color": "Color"
                     },
 
                     "fpsConfig": {
                         "@": "FPS Widget",
                         "isEnabled": "Enabled",
+                        "showBackground": "Show Background",
 
                         "optimalFps": {
                             "@": "Optimal FPS",
