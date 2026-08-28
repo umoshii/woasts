@@ -121,6 +121,20 @@
 
                         "greenFpsColor": "Green FPS Color",
                         "yellowFpsColor": "Yellow FPS Color"
+                    },
+
+                    "biomeConfig": {
+                        "@": "Biome Widget",
+                        "isEnabled": "Enabled",
+                        "showBackground": "Show Background",
+                        "grassTextColor": {
+                            "@": "Grass Text Color",
+                            "@Tooltip": "Uses the biomes grass color as the color for the text."
+                        },
+                        "prettifiedIdentifier": {
+                            "@": "Prettify Biome Name",
+                            "@Tooltip": "Puts the biomes path into title case."
+                        }
                     }
                 }
             }

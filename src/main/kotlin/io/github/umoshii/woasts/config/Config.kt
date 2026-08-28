@@ -1,6 +1,7 @@
 package io.github.umoshii.woasts.config
 
 import io.github.umoshii.woasts.Woasts
+import io.github.umoshii.woasts.config.sections.BiomeConfigSection
 import io.github.umoshii.woasts.config.sections.FPSConfigSection
 import io.github.umoshii.woasts.config.sections.PingConfigSection
 import io.github.umoshii.woasts.config.sections.PositionConfigSection
@@ -50,4 +51,7 @@ class Config : ConfigData {
 
     @ConfigEntry.Gui.CollapsibleObject
     var fpsConfig: FPSConfigSection = FPSConfigSection()
+
+    @ConfigEntry.Gui.CollapsibleObject
+    var biomeConfig: BiomeConfigSection = BiomeConfigSection()
 }
