@@ -52,6 +52,7 @@
                         "@": "Ping Widget",
                         "isEnabled": "Enabled",
                         "showBackground": "Show Background",
+                        "hideInSingleplayer": "Hide In Singleplayer",
 
                         "updateTime": {
                             "@": "Update Time",

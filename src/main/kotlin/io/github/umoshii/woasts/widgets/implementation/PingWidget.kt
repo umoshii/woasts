@@ -3,6 +3,7 @@ package io.github.umoshii.woasts.widgets.implementation
 import io.github.umoshii.woasts.WoastsClient
 import io.github.umoshii.woasts.config.sections.PingConfigSection
 import io.github.umoshii.woasts.features.PingListener
+import io.github.umoshii.woasts.helpers.McClient
 import io.github.umoshii.woasts.utils.FontUtils
 import io.github.umoshii.woasts.widgets.Widget
 import net.minecraft.network.chat.MutableComponent
@@ -14,6 +15,13 @@ object PingWidget : Widget<PingConfigSection>() {
 
     override val config: PingConfigSection
         get() = WoastsClient.config.pingConfig
+
+    val isSinglePlayer: Boolean
+        get() = /*? if >= 26.2 {*/!McClient.instance.isMultiplayerServer/*? } else*///McClient.instance.isSingleplayer
+
+    override fun shouldRender(): Boolean {
+        return !config.hideInSingleplayer || !isSinglePlayer
+    }
 
     override fun getRenderIcon(): MutableComponent = FontUtils.Icons.PING.component
 

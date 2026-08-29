@@ -8,6 +8,8 @@ class PingConfigSection : WidgetConfigSection {
 
     override var showBackground: Boolean = true
 
+    var hideInSingleplayer: Boolean = true
+
     @ConfigEntry.Gui.Tooltip
     var updateTime: Int = 2
 
