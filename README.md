@@ -19,6 +19,9 @@ Woasts provides access to essential info like ping or location using small, unob
 - Ping
 - Location
 - FPS
+- Biome
+- Weather
+- IRL and ING Time
 - ...and many more to come in future updates!
 
 ## ▸ Contributing
