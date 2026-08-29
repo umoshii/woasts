@@ -52,6 +52,7 @@
                         "@": "Ping Widget",
                         "isEnabled": "Enabled",
                         "showBackground": "Show Background",
+                        "hideInSingleplayer": "Hide In Singleplayer",
 
                         "updateTime": {
                             "@": "Update Time",
@@ -135,6 +136,31 @@
                             "@": "Prettify Biome Name",
                             "@Tooltip": "Puts the biomes path into title case."
                         }
+                    },
+
+                    "irlTimeConfig": {
+                        "@": "Irl Time Widget",
+                        "isEnabled": "Enabled",
+                        "showBackground": "Show Background",
+                        "time24hFormat": "24 Hour Format"
+                    },
+
+                    "ingameTimeConfig": {
+                        "@": "In-game Time Widget",
+                        "isEnabled": "Enabled",
+                        "showBackground": "Show Background",
+                        "time24hFormat": "24 Hour Format",
+                        "onlyShowInOverworld": {
+                            "@": "Only Show In Overworld",
+                            "@Tooltip": "Only shows the widget in the overworld, if disabled it shows the overworld time in other dimensions."
+                        }
+                    },
+
+                    "weatherConfig": {
+                        "@": "Weather Widget",
+                        "isEnabled": "Enabled",
+                        "showBackground": "Show Background",
+                        "hideWhenClear": "Hide When Clear Weather"
                     }
                 }
             }

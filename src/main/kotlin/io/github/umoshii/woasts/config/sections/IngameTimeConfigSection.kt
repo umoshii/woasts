@@ -2,14 +2,13 @@ package io.github.umoshii.woasts.config.sections
 
 import me.shedaniel.autoconfig.annotation.ConfigEntry
 
-class BiomeConfigSection : WidgetConfigSection {
+class IngameTimeConfigSection : WidgetConfigSection {
     override var isEnabled: Boolean = true
 
     override var showBackground: Boolean = true
 
-    @ConfigEntry.Gui.Tooltip
-    var grassTextColor: Boolean = true
+    var time24hFormat: Boolean = true
 
     @ConfigEntry.Gui.Tooltip
-    var prettifiedIdentifier: Boolean = true
+    var onlyShowInOverworld: Boolean = true
 }
