@@ -148,7 +148,11 @@
                         "@": "In-game Time Widget",
                         "isEnabled": "Enabled",
                         "showBackground": "Show Background",
-                        "time24hFormat": "24 Hour Format"
+                        "time24hFormat": "24 Hour Format",
+                        "onlyShowInOverworld": {
+                            "@": "Only Show In Overworld",
+                            "@Tooltip": "Only shows the widget in the overworld, if disabled it shows the overworld time in other dimensions."
+                        }
                     }
                 }
             }

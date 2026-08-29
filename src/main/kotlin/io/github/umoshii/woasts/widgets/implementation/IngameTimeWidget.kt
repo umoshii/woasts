@@ -16,7 +16,7 @@ object IngameTimeWidget : Widget<IngameTimeConfigSection>() {
         get() = WoastsClient.config.ingameTimeConfig
 
     val time: Long
-        get() = McClient.level?.overworldClockTime ?: 0
+        get() = (if (config.onlyShowInOverworld) McClient.level?.defaultClockTime else McClient.level?.overworldClockTime) ?: 0
 
     val isDay: Boolean
         get() {
@@ -24,6 +24,10 @@ object IngameTimeWidget : Widget<IngameTimeConfigSection>() {
             val timeOfDay = time % 24000L
             return timeOfDay in 0L..12999L
         }
+
+    override fun shouldRender(): Boolean {
+        return time > 0 // So it's hidden in the nether/end
+    }
 
     override fun getRenderColor(): Int {
         return if (isDay) dayColor else nightColor

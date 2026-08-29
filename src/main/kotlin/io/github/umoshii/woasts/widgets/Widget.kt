@@ -24,8 +24,10 @@ abstract class Widget<T : WidgetConfigSection> {
     abstract fun getRenderColor(): Int
     abstract fun getRenderIcon(): MutableComponent
 
+    open fun shouldRender(): Boolean = true
+
     fun render(graphics: GuiGraphicsExtractor, tickCounter: DeltaTracker, x: Int, y: Int) {
-        if (!isEnabled) return
+        if (!isEnabled || !shouldRender()) return
 
         val renderColor = getRenderColor()
         val renderComponent = Component.empty()
