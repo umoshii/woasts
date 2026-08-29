@@ -11,5 +11,5 @@ class BiomeConfigSection : WidgetConfigSection {
     var grassTextColor: Boolean = true
 
     @ConfigEntry.Gui.Tooltip
-    var prettifiedIdentifier: Boolean = false
+    var prettifiedIdentifier: Boolean = true
 }
