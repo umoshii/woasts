@@ -28,7 +28,7 @@ object WidgetRenderer {
 
         if (!WoastsClient.config.mainSwitch) return
 
-        val enabled = widgets.filter { it.isEnabled }
+        val enabled = widgets.filter { it.isEnabled && it.shouldRender() }
         if (enabled.isEmpty()) return
 
         val lines = if (WoastsClient.config.wrap > 0) {

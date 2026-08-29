@@ -27,8 +27,6 @@ abstract class Widget<T : WidgetConfigSection> {
     open fun shouldRender(): Boolean = true
 
     fun render(graphics: GuiGraphicsExtractor, tickCounter: DeltaTracker, x: Int, y: Int) {
-        if (!isEnabled || !shouldRender()) return
-
         val renderColor = getRenderColor()
         val renderComponent = Component.empty()
             .append(getRenderIcon())
