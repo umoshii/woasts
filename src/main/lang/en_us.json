@@ -135,6 +135,13 @@
                             "@": "Prettify Biome Name",
                             "@Tooltip": "Puts the biomes path into title case."
                         }
+                    },
+
+                    "irlTimeConfig": {
+                        "@": "Irl Time Widget",
+                        "isEnabled": "Enabled",
+                        "showBackground": "Show Background",
+                        "time24hFormat": "24 Hour Format"
                     }
                 }
             }
