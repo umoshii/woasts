@@ -154,6 +154,13 @@
                             "@": "Only Show In Overworld",
                             "@Tooltip": "Only shows the widget in the overworld, if disabled it shows the overworld time in other dimensions."
                         }
+                    },
+
+                    "weatherConfig": {
+                        "@": "Weather Widget",
+                        "isEnabled": "Enabled",
+                        "showBackground": "Show Background",
+                        "hideWhenClear": "Hide When Clear Weather"
                     }
                 }
             }

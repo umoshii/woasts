@@ -7,6 +7,7 @@ import io.github.umoshii.woasts.config.sections.IngameTimeConfigSection
 import io.github.umoshii.woasts.config.sections.IrlTimeConfigSection
 import io.github.umoshii.woasts.config.sections.PingConfigSection
 import io.github.umoshii.woasts.config.sections.PositionConfigSection
+import io.github.umoshii.woasts.config.sections.WeatherConfigSection
 import me.shedaniel.autoconfig.ConfigData
 import me.shedaniel.autoconfig.annotation.Config
 import me.shedaniel.autoconfig.annotation.ConfigEntry
@@ -62,4 +63,7 @@ class Config : ConfigData {
 
     @ConfigEntry.Gui.CollapsibleObject
     var ingameTimeConfig: IngameTimeConfigSection = IngameTimeConfigSection()
+
+    @ConfigEntry.Gui.CollapsibleObject
+    var weatherConfig: WeatherConfigSection = WeatherConfigSection()
 }
