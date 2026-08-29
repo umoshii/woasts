@@ -20,7 +20,9 @@ object PingWidget : Widget<PingConfigSection>() {
         get() = /*? if >= 26.2 {*/!McClient.instance.isMultiplayerServer/*? } else*///McClient.instance.isSingleplayer
 
     override fun shouldRender(): Boolean {
-        return !config.hideInSingleplayer || !isSinglePlayer
+        // If the option is disabled, we never check singleplayer
+        // If its enabled, we check if the player is in singleplayer or not
+        return !(config.hideInSingleplayer && isSinglePlayer)
     }
 
     override fun getRenderIcon(): MutableComponent = FontUtils.Icons.PING.component
