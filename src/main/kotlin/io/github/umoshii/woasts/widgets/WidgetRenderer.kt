@@ -6,6 +6,7 @@ import io.github.umoshii.woasts.config.Config
 import io.github.umoshii.woasts.helpers.McClient
 import io.github.umoshii.woasts.widgets.implementation.BiomeWidget
 import io.github.umoshii.woasts.widgets.implementation.FPSWidget
+import io.github.umoshii.woasts.widgets.implementation.IngameTimeWidget
 import io.github.umoshii.woasts.widgets.implementation.IrlTimeWidget
 import io.github.umoshii.woasts.widgets.implementation.PingWidget
 import io.github.umoshii.woasts.widgets.implementation.PositionWidget
@@ -15,7 +16,7 @@ import net.minecraft.client.DeltaTracker
 import net.minecraft.client.gui.GuiGraphicsExtractor
 
 object WidgetRenderer {
-    private val widgets: List<Widget<*>> = listOf(PingWidget, FPSWidget, PositionWidget, BiomeWidget, IrlTimeWidget)
+    private val widgets: List<Widget<*>> = listOf(PingWidget, FPSWidget, PositionWidget, BiomeWidget, IrlTimeWidget, IngameTimeWidget)
 
     // this is a static value, so it's justifiable to put it here like this
     private const val CONTAINER_HEIGHT: Int = 14

@@ -3,6 +3,7 @@ package io.github.umoshii.woasts.config
 import io.github.umoshii.woasts.Woasts
 import io.github.umoshii.woasts.config.sections.BiomeConfigSection
 import io.github.umoshii.woasts.config.sections.FPSConfigSection
+import io.github.umoshii.woasts.config.sections.IngameTimeConfigSection
 import io.github.umoshii.woasts.config.sections.IrlTimeConfigSection
 import io.github.umoshii.woasts.config.sections.PingConfigSection
 import io.github.umoshii.woasts.config.sections.PositionConfigSection
@@ -58,4 +59,7 @@ class Config : ConfigData {
 
     @ConfigEntry.Gui.CollapsibleObject
     var irlTimeConfig: IrlTimeConfigSection = IrlTimeConfigSection()
+
+    @ConfigEntry.Gui.CollapsibleObject
+    var ingameTimeConfig: IngameTimeConfigSection = IngameTimeConfigSection()
 }

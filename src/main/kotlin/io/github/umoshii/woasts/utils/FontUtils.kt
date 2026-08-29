@@ -16,6 +16,8 @@ object FontUtils {
         FPS("\uE002"),
         BIOME("\uE003"),
         CLOCK("\uE004"),
+        SUN("\uE005"),
+        MOON("\uE006"),
         ;
 
         constructor(c: String) : this(Component.literal(c).withStyle(iconFont))

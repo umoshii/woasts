@@ -142,6 +142,13 @@
                         "isEnabled": "Enabled",
                         "showBackground": "Show Background",
                         "time24hFormat": "24 Hour Format"
+                    },
+
+                    "ingameTimeConfig": {
+                        "@": "In-game Time Widget",
+                        "isEnabled": "Enabled",
+                        "showBackground": "Show Background",
+                        "time24hFormat": "24 Hour Format"
                     }
                 }
             }
