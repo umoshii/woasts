@@ -2,6 +2,7 @@ package io.github.umoshii.woasts.config
 
 import io.github.umoshii.woasts.Woasts
 import io.github.umoshii.woasts.config.sections.BiomeConfigSection
+import io.github.umoshii.woasts.config.sections.DayConfigSection
 import io.github.umoshii.woasts.config.sections.FPSConfigSection
 import io.github.umoshii.woasts.config.sections.IngameTimeConfigSection
 import io.github.umoshii.woasts.config.sections.IrlTimeConfigSection
@@ -66,4 +67,7 @@ class Config : ConfigData {
 
     @ConfigEntry.Gui.CollapsibleObject
     var weatherConfig: WeatherConfigSection = WeatherConfigSection()
+
+    @ConfigEntry.Gui.CollapsibleObject
+    var dayConfig: DayConfigSection = DayConfigSection()
 }

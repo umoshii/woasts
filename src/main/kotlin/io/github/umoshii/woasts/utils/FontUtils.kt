@@ -23,6 +23,7 @@ object FontUtils {
         SHINING_SUN("\uE007"),
         RAIN("\uE008"),
         THUNDER("\uE009"),
+        CALENDAR("\uE00A"),
         ;
 
         constructor(c: String) : this(Component.literal(c).withStyle(iconFont))

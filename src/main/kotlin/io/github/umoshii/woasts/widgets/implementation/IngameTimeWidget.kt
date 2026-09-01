@@ -45,11 +45,11 @@ object IngameTimeWidget : Widget<IngameTimeConfigSection>() {
         val minutes = ((adjustedTicks % 1000L) * 60L / 1000L).toInt()
 
         return if (config.time24hFormat) {
-            String.format("%02d:%02d ING", hours24, minutes)
+            String.format("%02d:%02d IGT", hours24, minutes)
         } else {
             val ampm = if (hours24 < 12) "am" else "pm"
             val hours12 = if (hours24 % 12 == 0) 12 else hours24 % 12
-            String.format("%02d:%02d%s ING", hours12, minutes, ampm)
+            String.format("%02d:%02d%s IGT", hours12, minutes, ampm)
         }
     }
 }

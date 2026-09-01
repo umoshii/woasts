@@ -22,6 +22,7 @@ Woasts provides access to essential info like ping or location using small, unob
 - Biome
 - Weather
 - IRL and ING Time
+- Day
 - ...and many more to come in future updates!
 
 ## ▸ Contributing
