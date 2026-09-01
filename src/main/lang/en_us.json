@@ -161,6 +161,16 @@
                         "isEnabled": "Enabled",
                         "showBackground": "Show Background",
                         "hideWhenClear": "Hide When Clear Weather"
+                    },
+
+                    "dayConfig": {
+                        "@": "Day Widget",
+                        "isEnabled": "Enabled",
+                        "showBackground": "Show Background",
+                        "onlyShowInOverworld": {
+                            "@": "Only Show In Overworld",
+                            "@Tooltip": "Only shows the widget in the overworld, if disabled it shows the overworld time in other dimensions."
+                        }
                     }
                 }
             }
